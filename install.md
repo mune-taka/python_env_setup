@@ -2,10 +2,10 @@
 日本語情報サイト：https://www.python.jp/ 
 本家と.exeファイルのダウンロードはこっち：https://www.python.org/
 インストール完了後、バージョンを確認する。
+'''コマンドプロンプトを起動'''
+'''py -V'''
+'''Python X.X.X'''
 
-1コマンドプロンプトを起動
-2py -V
-3Python X.X.X
 
 # pipのインストール
 最近のpythonはpip(python package index: pythonの便利機能をお手軽にインストールするためのユーティリティ)が付属されているらしい。
