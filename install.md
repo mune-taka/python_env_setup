@@ -36,12 +36,33 @@ py -m jupyterlab
 IDEは各自使いやすいものを用意すればおｋですが、今回の実践ではGpyOptというベイズ最適化用のライブラリを使うので、GpyOptが動く環境構築をお願いします。（今後いろんなライブラリを使いたいので、anaconda環境はお勧めしない。）
 
 
-# pythonのカーネル追加
+# jupyterlabに別ヴァージョンのpythonカーネル追加
 上述の通り、python本体のヴァージョンによっては環境構築できないライブラリがままあります。
 インストールしたなりのpythonのバージョンでは使えなくなった機能があるため、古いバージョンのpythonをjupyterlab上で使えるようにする。
+python3.6.8をダウンロード: https://www.python.org/downloads/release/python-368/
+デフォルトのインストール先は：C:\Users\user\AppData\Local\Programs\Python
+python3.6.8の実行ファイルを指定してipykernelをpip installする。
+```
+コマンドプロンプトを起動
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install ipykernel --proxy="XXXX"
+```
+jupyterにpython3.6.8を追加する。
+```
+コマンドプロンプトを起動
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m ipykernel install --user --name Python368
+```
+jupyterlabでカーネルを切り替えられるようになる
 
-
-
-
-
-
+# pythonのヴァージョン指定してライブラリを追加
+python3.6.8にベイズ最適化に必要なライブラリをインストール
+```
+コマンドプロンプトを起動
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install Gpy --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install gpyopt --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install numpy --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install scipy --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install pandas --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install scikit-learn --proxy="XXXX"
+C:\Users\user\AppData\Local\Programs\Python\Python36\python.exe -m pip install Matplotlib --proxy="XXXX"
+```
+pip listでライブラリの確認
