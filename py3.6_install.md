@@ -7,6 +7,9 @@
 既にインストール済みの場合不要。環境汚したくない場合は仮想環境で。
 日本語情報サイト：https://www.python.jp/ 
 本家と.exeファイルのダウンロードはこっち：https://www.python.org/
+フォルダに3.6の実行ファイル保存したのでそっちを使ってください。
+インストール時にAdd python X.X.X to PATHにチェックを入れる
+インストールガイド：https://www.python.jp/install/windows/install.html
 インストール完了後、バージョンを確認する。
 
 ```
